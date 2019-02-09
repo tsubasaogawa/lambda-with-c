@@ -24,6 +24,7 @@ $ aws lambda create-function --function-name lambda-with-c \
     --runtime provided --role arn:aws:iam::***:role/role_name
 
 # 3. Test the function on your aws managed console or cli
+```
 
 ## Tips
 
