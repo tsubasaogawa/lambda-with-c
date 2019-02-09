@@ -14,3 +14,6 @@ docker run --rm \
   -it ${PROGRAM} \
   /bin/bash -c "cp -r ${CONTAINER_BIN_DIR}/lambda_function /var/tmp"
 
+# zip
+cd bin && zip ../lambda_function.zip ./*
+
