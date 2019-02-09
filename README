@@ -25,3 +25,13 @@ $ aws lambda create-function --function-name lambda-with-c \
 
 # 3. Test the function on your aws managed console or cli
 
+## Tips
+
+### Update Lambda
+```
+$ ./build.sh
+$ aws lambda update-function-code \
+    --function-name lambda-with-c \
+    --zip-file fileb://lambda_function.zip
+```
+
