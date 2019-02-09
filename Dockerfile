@@ -6,8 +6,8 @@ WORKDIR /usr/local/src/lambda-with-c
 RUN set -x && yum install -y gcc make
 
 # ADD ./bootstrap .
-ADD ./lambda_function.c .
-ADD ./Makefile .
+COPY ./src/lambda_function.c .
+COPY ./Makefile .
 
-RUN make
+RUN make && make clean_obj
 

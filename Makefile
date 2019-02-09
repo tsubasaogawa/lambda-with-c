@@ -13,3 +13,6 @@ $(OBJS): $(PROGRAM).c
 clean:
 	rm -f $(PROGRAM){,o}
 
+clean_obj:
+	rm -f $(OBJS)
+
