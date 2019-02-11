@@ -13,6 +13,7 @@ $(OBJS): $(PROGRAM).c
 clean:
 	rm -f $(PROGRAM){,o}
 
+.PHONY: clean_obj
 clean_obj:
 	rm -f $(OBJS)
 
