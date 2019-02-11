@@ -17,8 +17,7 @@
 # 1. Compile
 $ docker-compose build
 $ docker-compose up -d
-$ ls -l bin/
-ls -l bin/lambda_function
+$ ls -l bin/lambda_function
 -rwxr-xr-x 1 root root 8232 Feb 11 12:49 bin/lambda_function
 
 # 2. Create a lambda function
