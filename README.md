@@ -48,7 +48,8 @@ $ cat /tmp/lambda-with-c.log
 
 ### Update Lambda
 ```
-$ ./build.sh
+$ docker-compose up -d
+$ cd bin && zip ../lambda_function.zip ./* && cd ..
 $ aws lambda update-function-code \
     --function-name lambda-with-c \
     --zip-file fileb://lambda_function.zip
